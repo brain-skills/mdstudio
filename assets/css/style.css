@@ -1989,19 +1989,14 @@ nav[aria-label="Main menu"] {
 }
 
 .request-section {
-  /* min-height: 100vh; */
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.request-content {
-  z-index: 2;
-}
-
 .contact-phone-img {
   position: absolute;
-  right: 0;
+  right: 10%;
   bottom: 0;
   height: 95%;
   max-height: 800px;
@@ -2159,4 +2154,38 @@ nav[aria-label="Main menu"] {
   .menu-link {
     font-size: 16px !important;
   }
+}
+.btn-secondary.dropdown-toggle:active,
+.btn-secondary.dropdown-toggle:focus,
+.btn-secondary.dropdown-toggle:focus-visible {
+  background-color: transparent !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item.active {
+  background-color: #f8f9fa !important;
+  color: #212529 !important;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f3f5 !important;
+}
+
+.btn-custom:hover {
+  color: #249fdd !important;
+}
+
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:focus-visible {
+  color: #249fdd !important;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f3f5 !important;
+  color: #212529 !important;
 }

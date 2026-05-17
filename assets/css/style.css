@@ -1637,6 +1637,13 @@ nav[aria-label="Main menu"] {
   }
 }
 
+@media (max-width: 1400px) {
+  .py-section {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+}
+
 @media (min-width: 1200px) {
   .service-item {
     padding-top: 110px !important;
@@ -1754,8 +1761,8 @@ nav[aria-label="Main menu"] {
   }
 
   .py-section {
-    padding-top: 36px !important;
-    padding-bottom: 36px !important;
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
   }
 
   .contact-phone {
@@ -2140,7 +2147,7 @@ nav[aria-label="Main menu"] {
 }
 
 .p-vertical {
-  padding-top: 10px !important;
+  padding-top: 20px !important;
   padding-bottom: 100px !important;
 }
 

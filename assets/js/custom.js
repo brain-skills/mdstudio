@@ -1,10 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   document.documentElement.classList.add("dom-ready");
 });
-
 document.addEventListener("DOMContentLoaded", () => {
-  // ... your existing variables for pricing ...
-
   const benefitsGroups = document.querySelectorAll("#benefits-container .benefits-group");
 
   function showPricingGroup(category) {
@@ -23,14 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("#desktop-filters .pricing-filter-link").forEach((link) => {
       link.classList.toggle("active-service", link.dataset.filter === value);
     });
-    document.getElementById("mobile-filter").value = value;
 
-    // Show corresponding content
+    const mobileFilter = document.getElementById("mobile-filter");
+    if (mobileFilter) {
+      mobileFilter.value = value;
+    } else {
+    }
+
     showPricingGroup(value);
     showBenefitsForService(value);
   }
 
-  // Desktop clicks
   document.querySelectorAll("#desktop-filters .pricing-filter-link").forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -39,16 +39,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Mobile change
-  document.getElementById("mobile-filter").addEventListener("change", (e) => {
-    const category = e.target.value;
-    setActiveFilter(category);
-  });
+  const mobileFilter = document.getElementById("mobile-filter");
+  if (mobileFilter) {
+    mobileFilter.addEventListener("change", (e) => {
+      setActiveFilter(e.target.value);
+    });
+  } else {
+  }
 
-  // Initial state
   setActiveFilter("web-development");
-
-  // ... your existing monthly/annual toggle code ...
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -390,16 +389,55 @@ document.addEventListener("DOMContentLoaded", () => {
   sections.forEach((s) => observer.observe(s));
 });
 
-document.getElementById("forgotPasswordForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
+  const forgotForm = document.getElementById("forgotPasswordForm");
 
-  this.classList.add("d-none");
+  if (!forgotForm) {
+    return;
+  }
 
-  document.getElementById("resetSuccess").classList.remove("d-none");
+  forgotForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    this.classList.add("d-none");
+
+    const successMessage = document.getElementById("resetSuccess");
+    if (successMessage) {
+      successMessage.classList.remove("d-none");
+    }
+  });
 });
 
-document.getElementById("forgotPasswordModal").addEventListener("hidden.bs.modal", function () {
-  document.getElementById("forgotPasswordForm").classList.remove("d-none");
-  document.getElementById("resetSuccess").classList.add("d-none");
-  document.getElementById("forgotPasswordForm").reset();
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("forgotPasswordModal");
+
+  if (!modal) {
+    return;
+  }
+
+  modal.addEventListener("hidden.bs.modal", function () {
+    const form = document.getElementById("forgotPasswordForm");
+    const success = document.getElementById("resetSuccess");
+
+    if (form) {
+      form.classList.remove("d-none");
+      form.reset();
+    }
+
+    if (success) {
+      success.classList.add("d-none");
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (typeof GLightbox !== "undefined") {
+    const lightbox = GLightbox({
+      selector: ".glightbox",
+      loop: true,
+      zoomable: true,
+      openEffect: "zoom",
+      closeEffect: "fade",
+    });
+  }
 });

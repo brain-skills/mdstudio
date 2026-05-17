@@ -391,46 +391,13 @@
         </div>
       </section>
     </main>
-    <footer class="py-4 bg-dark-opacity">
-      <div class="container d-flex flex-column flex-md-row gap-4 py-4 my-0 my-md-2 justify-content-between">
-        <div class="company-info d-flex flex-column">
-          <div>
-            <a href="index.html" class="mb-0">
-              <img src="./assets/images/logos/footer-logo.svg" alt="Mega Digital Studio logo" class="mb-4 d-flex justify-content-center m-auto m-md-0 mb-md-4" style="max-width: 214px" />
-            </a>
-            <p class="fs-6 mb-0 fw-normal text-gray-custom text-center text-md-start">Legal information, organization details or other data necessary for display here</p>
-          </div>
-          <p class="fs-6 mb-0 fw-normal text-gray-custom text-center text-md-start mt-auto">© 2025 Mega Digital Studio <br />All rights reserved</p>
+    <footer class="py-4 bg-dark-opacity" id="footer">
+      <div class="container d-flex flex-column flex-lg-row justify-content-between my-0 my-md-2 border-bottom px-0 gap-5">
+        <div class="company-info d-flex flex-column footer-column align-items-center align-items-lg-start">
+          <img src="./assets/images/logos/footer-logo.svg" alt="Mega Digital Studio logo" class="mb-4 d-flex justify-content-center m-auto m-md-0 mb-md-4" />
+          <p class="fs-6 mb-0 fw-normal text-gray-custom text-center text-md-start">Legal information, organization details or other data necessary for display here</p>
         </div>
-        <nav class="footer-nav d-none d-md-flex">
-          <ul class="list-unstyled d-flex flex-column gap-12">
-            <li>
-              <a href="index.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">Home</a>
-            </li>
-            <li>
-              <a href="portfolio.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">Portfolio</a>
-            </li>
-            <li>
-              <a href="about.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">About us</a>
-            </li>
-            <li>
-              <a href="news.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">News</a>
-            </li>
-            <li>
-              <a href="price.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">Price</a>
-            </li>
-            <li>
-              <a href="career.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">Career</a>
-            </li>
-            <li>
-              <a href="faq.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">FAQ</a>
-            </li>
-            <li>
-              <a href="contacts.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <section class="footer-services d-none d-md-flex">
+        <nav class="footer-services d-none d-lg-flex footer-column">
           <ul class="list-unstyled d-flex flex-column gap-12">
             <li>
               <a href="service.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">Web Development</a>
@@ -450,6 +417,13 @@
             <li>
               <a href="service.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">SEO</a>
             </li>
+          </ul>
+        </nav>
+        <nav class="footer-column d-none d-lg-flex">
+          <ul class="list-unstyled d-flex flex-column gap-12">
+            <li>
+              <a href="contacts.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">Contacts</a>
+            </li>
             <li>
               <a href="service.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">SMM</a>
             </li>
@@ -459,17 +433,60 @@
             <li>
               <a href="service.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">Data Extraction & Integration</a>
             </li>
+            <li>
+              <a href="faq.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">FAQ</a>
+            </li>
           </ul>
-        </section>
-        <address class="footer-contact d-flex flex-column align-items-center align-items-md-start">
-          <div class="d-flex align-items-center mb-2 justify-content-center">
-            <img src="./assets/images/svg/icon_call-blue.svg" alt="Phone icon" class="me-2" />
-            <a href="tel:+001234567890" class="fw-bold fs-5"> +00 (123) 456-78-90</a>
-          </div>
-          <p class="fw-semibold text-blue-custom fs-5">megadigitalstudio@domain.com</p>
+        </nav>
+        <nav class="footer-nav d-none d-lg-flex footer-column">
+          <ul class="list-unstyled d-flex flex-column gap-12">
+            <li>
+              <a href="index.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">Home</a>
+            </li>
+            <li>
+              <a href="portfolio.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">Portfolio</a>
+            </li>
+            <li>
+              <a href="about.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">About us</a>
+            </li>
+            <li>
+              <a href="news.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">News</a>
+            </li>
+            <li>
+              <a href="price.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">Price</a>
+            </li>
+            <li>
+              <a href="career.html" class="fw-normal fs-6 text-decoration-none text-dark-custom">Career</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="d-flex flex-column gap-12 align-items-center align-items-lg-start footer-column">
+          <a href="tel:+001234567890" class="fw-bold fs-5"> +00 (123) 456-78-90</a>
+          <a href="mailto:megadigitalstudio@domain.com" class="fw-semibold fs-5 text-break">megadigitalstudio@domain.com</a>
           <p class="fw-light fs-5 text-decoration-none text-dark-custom">Address: 012345 City, State Street title 12/3</p>
-          <a href="https://www.facebook.com/?locale=ru_RU" target="_blank" class="d-flex align-self-end"><img src="./assets/images/svg/fb-icon.svg" alt="Facebook icon" width="36px" height="36px" /></a>
+          <div class="social-icons d-flex gap-3 align-items-center">
+            <div class="social-link fb cursor-pointer" onclick="window.open('https://facebook.com', '_blank')">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+
+            <div class="social-link ig cursor-pointer" onclick="window.open('https://instagram.com', '_blank')">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+
+            <div class="social-link yt cursor-pointer" onclick="window.open('https://youtube.com', '_blank')">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
         </address>
+      </div>
+      <div class="container pt-2 d-flex flex-column flex-lg-row gap-3 gap-lg-0 align-items-center justify-content-between">
+        <p class="fs-5 mb-0 fw-normal text-gray-custom text-center text-md-start mt-auto">© 2025 Mega Digital Studio All rights reserved</p>
+
+        <div class="d-flex">
+          <a href="privacy-policy.html" class="text-decoration-none pe-2 border-dark border-end">Privacy Policy</a>
+          <a href="terms.html" class="text-decoration-none px-2 border-end border-dark">Terms of Service</a>
+          <a href="cookies.html" class="text-decoration-none ps-2">Cookies</a>
+        </div>
       </div>
     </footer>
 

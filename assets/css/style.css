@@ -29,11 +29,6 @@ html {
   visibility: hidden;
 }
 
-html,
-body {
-  overflow-x: visible !important;
-}
-
 html.dom-ready {
   visibility: visible;
 }
@@ -1696,8 +1691,6 @@ nav[aria-label="Main menu"] {
 
 @media (max-width: 992px) {
   .container {
-    margin-left: 24px !important;
-    margin-right: 24px !important;
     max-width: 96% !important;
   }
 
@@ -1835,7 +1828,7 @@ nav[aria-label="Main menu"] {
     margin-left: 0px !important;
     margin-right: 0px !important;
     max-width: 100% !important;
-    padding: 0 17px !important;
+    padding: 20px 17px !important;
   }
 
   .hero-content,

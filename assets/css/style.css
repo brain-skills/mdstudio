@@ -1191,8 +1191,6 @@ nav[aria-label="Main menu"] {
 
 .pricing-card {
   flex: 0 0 auto;
-  width: 85%;
-  max-width: 360px;
   scroll-snap-align: start;
 }
 
@@ -1543,12 +1541,6 @@ nav[aria-label="Main menu"] {
   padding: 0 6px;
 }
 
-.pricing-row .pricing-card {
-  flex: 0 0 85%;
-  max-width: 420px;
-  scroll-snap-align: start;
-}
-
 .profile-summary {
   background: #f6f7f9;
   border-radius: 12px;
@@ -1578,17 +1570,6 @@ nav[aria-label="Main menu"] {
 
 .swiper-pagination {
   display: none !important;
-}
-
-@media (min-width: 576px) {
-  .pricing-card {
-    width: 70%;
-  }
-}
-@media (min-width: 768px) {
-  .pricing-card {
-    width: 55%;
-  }
 }
 
 @media (min-width: 1450px) {
@@ -1681,11 +1662,6 @@ nav[aria-label="Main menu"] {
   .pricing-row-lg {
     display: flex;
     gap: 24px;
-  }
-
-  .pricing-row-lg .pricing-card {
-    flex: 1 1 0;
-    max-width: 380px;
   }
 }
 
@@ -2242,4 +2218,32 @@ nav[aria-label="Main menu"] {
 .social-link.yt:hover i {
   color: #ff0000;
   transform: scale(1.25);
+}
+
+.pricing-scroll {
+  overflow: hidden;
+}
+
+@media (max-width: 1199.98px) {
+  .pricing-scroll {
+    overflow-x: auto;
+    padding: 0 12px; /* fixes cut cards */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pricing-scroll .row {
+    flex-wrap: nowrap !important;
+    margin: 0; /* removes bootstrap negative margins */
+  }
+
+  .pricing-scroll [class*="col-"] {
+    flex: 0 0 auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .pricing-scroll .row {
+    flex-wrap: wrap !important;
+  }
 }

@@ -33,6 +33,12 @@ html.dom-ready {
   visibility: visible;
 }
 
+@media (min-width: 1000px) {
+  body {
+    overflow-x: visible !important;
+  }
+}
+
 @font-face {
   font-family: "RobotoSerif";
   src: url("../fonts/roboto/RobotoSerif-Thin.ttf") format("truetype");
@@ -1607,12 +1613,6 @@ nav[aria-label="Main menu"] {
   }
 }
 
-@media (min-width: 1400px) {
-  .vh-xl-100 {
-    min-height: 100vh;
-  }
-}
-
 @media (max-width: 1400px) {
   .py-section {
     padding-top: 50px !important;
@@ -1638,10 +1638,6 @@ nav[aria-label="Main menu"] {
 }
 
 @media (min-width: 992px) {
-  .vh-xxl-100 {
-    height: 100vh;
-  }
-
   .w-lg-100 {
     width: 100% !important;
   }

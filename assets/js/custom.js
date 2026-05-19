@@ -441,3 +441,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const askBtn = document.getElementById("askQuestionBtn");
+  const chat = document.getElementById("supportChat");
+  const closeBtn = document.getElementById("closeChat");
+
+  if (!askBtn || !chat || !closeBtn) {
+    console.log("Elements not found!");
+    return;
+  }
+
+  askBtn.addEventListener("click", () => {
+    chat.style.visibility = "visible";
+    chat.style.opacity = "1";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    chat.style.opacity = "0";
+    chat.style.visibility = "hidden";
+  });
+});

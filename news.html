@@ -265,141 +265,126 @@
           <h1 class="title mb-4 fw-bold">News</h1>
 
           <div class="row g-4 g-lg-5">
+            <!-- LEFT SIDEBAR -->
             <div class="col-lg-3">
-              <nav class="sidebar-nav mb-4">
-                <a class="nav-item active" href="#" data-filter="all">All news</a>
-                <a class="nav-item" href="#" data-filter="science">Science, development and IT</a>
-                <a class="nav-item" href="#" data-filter="creatory">News category</a>
-                <a class="nav-item" href="#" data-filter="marketing">Marketing and Advertising</a>
-                <a class="nav-item" href="#" data-filter="mobile">Mobile Apps</a>
-                <a class="nav-item" href="#" data-filter="tech">Technologies</a>
-                <a class="nav-item" href="#" data-filter="world">Latest news from all over the world</a>
-                <a class="nav-item" href="#" data-filter="software">Soft development</a>
+              <nav class="nav flex-column nav-pills shadow rounded" role="tablist">
+                <button class="nav-link active border-bottom" data-bs-toggle="pill" data-bs-target="#tab-all" type="button">All news</button>
+                <button class="nav-link border-bottom" data-bs-toggle="pill" data-bs-target="#tab-science" type="button">Science</button>
+                <button class="nav-link border-bottom" data-bs-toggle="pill" data-bs-target="#tab-marketing" type="button">Marketing</button>
+                <button class="nav-link border-bottom" data-bs-toggle="pill" data-bs-target="#tab-mobile" type="button">Mobile</button>
+                <button class="nav-link border-bottom" data-bs-toggle="pill" data-bs-target="#tab-tech" type="button">Technologies</button>
               </nav>
 
-              <div class="subscribe-widget p-4 text-white">
+              <div class="subscribe-widget p-4 text-white mt-4">
                 <h3 class="fw-bold mb-2 fs-4">Subscribe to our news</h3>
                 <p class="small mb-4 opacity-75">to stay up to date with the latest and most interesting events</p>
 
-                <form id="subscribeForm">
+                <form>
                   <div class="mb-3">
                     <input type="text" class="form-control py-2 border-0" placeholder="Your name" required />
                   </div>
                   <div class="mb-3">
                     <input type="email" class="form-control py-2 border-0" placeholder="Your email" required />
                   </div>
-                  <button type="submit" class="btn btn-subscribe w-100 py-2 fw-bold">Subscribe</button>
+                  <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">Subscribe</button>
                 </form>
               </div>
             </div>
 
+            <!-- RIGHT CONTENT -->
             <div class="col-lg-9">
-              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="news-grid">
-                <div class="col filter-item" data-category="science">
-                  <article class="card h-100 border-0 shadow-sm news-card">
-                    <div class="img-hover-lightbox">
-                      <a href="./assets/images/news/news1.png" class="glightbox" data-gallery="news">
-                        <img src="./assets/images/news/news1.png" class="card-img-top" alt="Science" loading="lazy" />
-
-                        <div class="overlay">
-                          <span class="frame">
-                            <span class="top"></span>
-                            <span class="right"></span>
-                            <span class="bottom"></span>
-                            <span class="left"></span>
-                          </span>
-                          <i class="fa-solid fa-magnifying-glass"></i>
+              <div class="tab-content">
+                <!-- ALL -->
+                <div class="tab-pane fade show active" id="tab-all">
+                  <div class="row g-4">
+                    <!-- CARD -->
+                    <div class="col-md-6 col-lg-4">
+                      <div class="card h-100 shadow-sm border-0">
+                        <img src="./assets/images/news/news1.png" class="card-img-top" />
+                        <div class="card-body">
+                          <h5 class="fw-bold">Quantum Breakthroughs</h5>
+                          <small class="text-muted">Jan 30, 2026</small>
+                          <p>A new era of processing power is approaching.</p>
                         </div>
-                      </a>
+                      </div>
                     </div>
 
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title fs-5 fw-bold mb-2">Quantum Breakthroughs</h5>
-                      <small class="text-muted mb-2">Jan 30, 2026</small>
-                      <p class="card-text fs-6">A new era of processing power is approaching with recent successes.</p>
+                    <!-- CARD -->
+                    <div class="col-md-6 col-lg-4">
+                      <div class="card h-100 shadow-sm border-0">
+                        <img src="./assets/images/news/news3.png" class="card-img-top" />
+                        <div class="card-body">
+                          <h5 class="fw-bold">Native vs Cross-Platform</h5>
+                          <small class="text-muted">Jan 28, 2026</small>
+                          <p>Which mobile strategy wins?</p>
+                        </div>
+                      </div>
                     </div>
-                  </article>
+                  </div>
                 </div>
 
-                <div class="col filter-item" data-category="mobile">
-                  <article class="card h-100 border-0 shadow-sm news-card">
-                    <div class="img-hover-lightbox">
-                      <a href="./assets/images/news/news3.png" class="glightbox" data-gallery="news">
-                        <img src="./assets/images/news/news3.png" class="card-img-top" alt="Mobile" loading="lazy" />
-
-                        <div class="overlay">
-                          <span class="frame">
-                            <span class="top"></span>
-                            <span class="right"></span>
-                            <span class="bottom"></span>
-                            <span class="left"></span>
-                          </span>
-                          <i class="fa-solid fa-magnifying-glass"></i>
+                <!-- SCIENCE -->
+                <div class="tab-pane fade" id="tab-science">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                      <div class="card h-100 shadow-sm border-0">
+                        <img src="./assets/images/news/news1.png" class="card-img-top" />
+                        <div class="card-body">
+                          <h5 class="fw-bold">Quantum Breakthroughs</h5>
+                          <small class="text-muted">Jan 30, 2026</small>
+                          <p>Science category content.</p>
                         </div>
-                      </a>
+                      </div>
                     </div>
-
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title fs-5 fw-bold mb-2">Native vs Cross-Platform</h5>
-                      <small class="text-muted mb-2">Jan 28, 2026</small>
-                      <p class="card-text fs-6">Which mobile strategy wins in the 2026 market landscape?</p>
-                    </div>
-                  </article>
+                  </div>
                 </div>
 
-                <div class="col filter-item" data-category="marketing">
-                  <article class="card h-100 border-0 shadow-sm news-card">
-                    <div class="img-hover-lightbox">
-                      <a href="./assets/images/news/news1.png" class="glightbox" data-gallery="news">
-                        <img src="./assets/images/news/news1.png" class="card-img-top" alt="Science" loading="lazy" />
-
-                        <div class="overlay">
-                          <span class="frame">
-                            <span class="top"></span>
-                            <span class="right"></span>
-                            <span class="bottom"></span>
-                            <span class="left"></span>
-                          </span>
-                          <i class="fa-solid fa-magnifying-glass"></i>
+                <!-- MARKETING -->
+                <div class="tab-pane fade" id="tab-marketing">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                      <div class="card h-100 shadow-sm border-0">
+                        <img src="./assets/images/news/news1.png" class="card-img-top" />
+                        <div class="card-body">
+                          <h5 class="fw-bold">Marketing News</h5>
+                          <small class="text-muted">Jan 30, 2026</small>
+                          <p>Marketing content.</p>
                         </div>
-                      </a>
+                      </div>
                     </div>
-
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title fs-5 fw-bold mb-2">Quantum Breakthroughs</h5>
-                      <small class="text-muted mb-2">Jan 30, 2026</small>
-                      <p class="card-text fs-6">A new era of processing power is approaching with recent successes.</p>
-                    </div>
-                  </article>
+                  </div>
                 </div>
 
-                <div class="col filter-item" data-category="tech">
-                  <article class="card h-100 border-0 shadow-sm news-card">
-                    <div class="img-hover-lightbox">
-                      <a href="./assets/images/news/news4.png" class="glightbox" data-gallery="news">
-                        <img src="./assets/images/news/news4.png" class="card-img-top" alt="Tech" loading="lazy" />
-
-                        <div class="overlay">
-                          <span class="frame">
-                            <span class="top"></span>
-                            <span class="right"></span>
-                            <span class="bottom"></span>
-                            <span class="left"></span>
-                          </span>
-                          <i class="fa-solid fa-magnifying-glass"></i>
+                <!-- MOBILE -->
+                <div class="tab-pane fade" id="tab-mobile">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                      <div class="card h-100 shadow-sm border-0">
+                        <img src="./assets/images/news/news3.png" class="card-img-top" />
+                        <div class="card-body">
+                          <h5 class="fw-bold">Mobile Apps</h5>
+                          <small class="text-muted">Jan 28, 2026</small>
+                          <p>Mobile category.</p>
                         </div>
-                      </a>
+                      </div>
                     </div>
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title fs-5 fw-bold mb-2">Next-Gen Wearables</h5>
-                      <small class="text-muted mb-2">Jan 22, 2026</small>
-                      <p class="card-text fs-6">Exploring hardware that integrates tech into daily life.</p>
-                    </div>
-                  </article>
+                  </div>
                 </div>
 
-                <div class="col-12 d-none text-center py-5" id="filter-empty">
-                  <p class="fs-5 text-muted">No news found in this category.</p>
+                <!-- TECH -->
+                <div class="tab-pane fade" id="tab-tech">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                      <div class="card h-100 shadow-sm border-0">
+                        <img src="./assets/images/news/news4.png" class="card-img-top" />
+                        <div class="card-body">
+                          <h5 class="fw-bold">Next-Gen Wearables</h5>
+                          <small class="text-muted">Jan 22, 2026</small>
+                          <p>Technology content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -264,168 +264,98 @@
           </p>
 
           <div class="row g-4 g-lg-5">
+            <!-- LEFT -->
             <div class="col-lg-3 order-lg-1">
               <div class="d-flex flex-column gap-3 position-sticky mt-2">
-                <nav class="sidebar-nav mb-4">
-                  <a class="nav-item active" href="#" data-filter="all">All vacancies</a>
-                  <a class="nav-item" href="#" data-filter="science">Managers</a>
-                  <a class="nav-item" href="#" data-filter="creatory">Developers</a>
-                  <a class="nav-item" href="#" data-filter="mobile">Designers</a>
-                  <a class="nav-item" href="#" data-filter="tech">Support</a>
-                  <a class="nav-item" href="#" data-filter="world">Content managers</a>
+                <nav class="sidebar-nav mb-4 nav" role="tablist">
+                  <a class="nav-item active" data-bs-toggle="tab" data-bs-target="#tab-all" href="#">All vacancies</a>
+                  <a class="nav-item" data-bs-toggle="tab" data-bs-target="#tab-managers" href="#">Managers</a>
+                  <a class="nav-item" data-bs-toggle="tab" data-bs-target="#tab-developers" href="#">Developers</a>
+                  <a class="nav-item" data-bs-toggle="tab" data-bs-target="#tab-designers" href="#">Designers</a>
+                  <a class="nav-item" data-bs-toggle="tab" data-bs-target="#tab-support" href="#">Support</a>
+                  <a class="nav-item" data-bs-toggle="tab" data-bs-target="#tab-content" href="#">Content managers</a>
                 </nav>
               </div>
             </div>
 
+            <!-- RIGHT -->
             <div class="col-lg-9 order-lg-2">
-              <div class="bg-white shadow-sm rounded border overflow-hidden mb-4" data-categories="developers">
-                <div class="p-3 p-lg-4 user-select-none cursor-pointer" data-bs-toggle="collapse" data-bs-target="#jobSeniorDeveloper" aria-expanded="false" aria-controls="jobSeniorDeveloper">
-                  <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h4 class="mb-0 fw-semibold">Senior Developer</h4>
-                    <div class="d-flex align-items-center gap-2">
-                      <span class="fs-5 fw-semibold">$ 2500</span>
-                      <span class="custom-chevron"></span>
+              <div class="tab-content">
+                <!-- ALL -->
+                <div class="tab-pane fade show active" id="tab-all">
+                  <!-- Senior -->
+                  <div class="bg-white shadow-sm rounded border overflow-hidden mb-4">
+                    <div class="p-3 p-lg-4 user-select-none cursor-pointer" data-bs-toggle="collapse" data-bs-target="#jobSeniorDeveloper">
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="mb-0 fw-semibold">Senior Developer</h4>
+                        <div class="d-flex align-items-center gap-2">
+                          <span class="fs-5 fw-semibold">$ 2500</span>
+                          <span class="custom-chevron"></span>
+                        </div>
+                      </div>
+                      <p class="mb-0 text-muted preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </div>
+
+                    <div class="collapse" id="jobSeniorDeveloper">
+                      <div class="p-3 p-lg-4 pt-0 border-top">
+                        <button class="btn btn-primary px-4">Respond to a vacancy</button>
+                      </div>
                     </div>
                   </div>
 
-                  <p class="mb-0 text-muted preview-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor ante id arcu laoreet sagittis. Integer sagittis, orci mattis vestibulum venenatis, nulla massa vehicula risus, ac euismod odio lectus vel risus. Cras
-                    pellentesque augue vel dui accumsan pretium in in dolor. Aliquam non ipsum a ex efficitur luctus commodo sed est. Aliquam erat volutpat. Fusce sapien purus, eleifend in ligula vel, vestibulum sagittis augue. Nullam purus eros,
-                    rhoncus et pulvinar ac, hendrerit nec tortor. Donec at augue gravida, aliquet neque in, efficitur ante. Integer bibendum ipsum eget nulla volutpat, in porta arcu pulvinar. Cras gravida magna eu nibh dignissim elementum nec ac
-                    velit.
-                  </p>
-                </div>
-
-                <div class="collapse" id="jobSeniorDeveloper">
-                  <div class="p-3 p-lg-4 pt-0 border-top">
-                    <div class="mb-4">
-                      <p class="fw-semibold mb-2">1. Cras pellentesque augue vel dui accumsan pretium in in dolor.</p>
-                      <p class="text-muted ms-4 mb-0">
-                        Aliquam non ipsum a ex efficitur luctus commodo sed est. Aliquam erat volutpat. Fusce sapien purus, eleifend in ligula vel, vestibulum sagittis augue. Nullam purus eros, rhoncus et pulvinar ac, hendrerit nec tortor. Donec at
-                        augue gravida, aliquet neque in, efficitur ante. Integer bibendum ipsum eget nulla volutpat, in porta arcu pulvinar. Cras gravida magna eu nibh dignissim elementum nec ac velit.
-                      </p>
+                  <!-- Middle -->
+                  <div class="bg-white shadow-sm rounded border overflow-hidden mb-4">
+                    <div class="p-3 p-lg-4 user-select-none cursor-pointer" data-bs-toggle="collapse" data-bs-target="#jobMiddleDeveloper">
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="mb-0 fw-semibold">Middle Developer</h4>
+                        <div class="d-flex align-items-center gap-2">
+                          <span class="fs-5 fw-semibold">$ 2500</span>
+                          <span class="custom-chevron"></span>
+                        </div>
+                      </div>
+                      <p class="mb-0 text-muted preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                     </div>
 
-                    <div class="mb-4">
-                      <p class="fw-semibold mb-2">2. Quisque condimentum tincidunt nisi, vel fringilla ipsum aliquet vitae.</p>
-                      <p class="text-muted ms-4 mb-0">
-                        Quisque condimentum tincidunt nisi, vel fringilla ipsum aliquet vitae. Duis ullamcorper mauris non volutpat convallis. Sed eget augue et risus tempor sollicitudin. Maecenas blandit a nulla vel feugiat. Aenean sit amet tellus
-                        porta, facilisis mi sodales, lacinia risus. Quisque efficitur sem et tempor luctus. Praesent bibendum purus ac dui laoreet faucibus. Pellentesque dignissim fringilla neque id iaculis. Sed consectetur vel ex sit amet lacinia.
-                        Nullam eu laoreet nisi, in dignissim ex. Nulla semper, nunc id pharetra imperdiet, metus nisl rhoncus ante, commodo ornare erat ante non nunc. Aliquam non eros feugiat ex bibendum dictum eu eu ante.
-                      </p>
-                    </div>
-
-                    <div class="mb-4">
-                      <p class="fw-semibold mb-2">3. Nullam lobortis risus eget arcu dignissim, ut blandit diam feugiat.</p>
-                      <p class="text-muted ms-4 mb-0">
-                        Vestibulum ut dignissim dui. Morbi sit amet convallis elit, non feugiat ligula. Sed id lorem lacinia, iaculis tortor ut, tincidunt dui. Donec vulputate mauris accumsan, imperdiet nulla mattis, viverra mi. Mauris non
-                        consectetur orci, pretium dignissim erat. Sed et magna eleifend, mattis lectus id, maximus magna. Nullam lobortis turpis sed magna commodo malesuada.
-                      </p>
-                    </div>
-
-                    <button class="btn btn-primary px-4">Respond to a vacancy</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="bg-white shadow-sm rounded border overflow-hidden mb-4" data-categories="developers">
-                <div class="p-3 p-lg-4 user-select-none cursor-pointer" data-bs-toggle="collapse" data-bs-target="#jobMiddleDeveloper" aria-expanded="false" aria-controls="jobMiddleDeveloper">
-                  <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h4 class="mb-0 fw-semibold">Middle Developer</h4>
-                    <div class="d-flex align-items-center gap-2">
-                      <span class="fs-5 fw-semibold">$ 2500</span>
-                      <span class="custom-chevron"></span>
+                    <div class="collapse" id="jobMiddleDeveloper">
+                      <div class="p-3 p-lg-4 pt-0 border-top">
+                        <button class="btn btn-primary px-4">Respond to a vacancy</button>
+                      </div>
                     </div>
                   </div>
 
-                  <p class="mb-0 text-muted preview-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor ante id arcu laoreet sagittis. Integer sagittis, orci mattis vestibulum venenatis, nulla massa vehicula risus, ac euismod odio lectus vel risus. Cras
-                    pellentesque augue vel dui accumsan pretium in in dolor. Aliquam non ipsum a ex efficitur luctus commodo sed est. Aliquam erat volutpat. Fusce sapien purus, eleifend in ligula vel, vestibulum sagittis augue. Nullam purus eros,
-                    rhoncus et pulvinar ac, hendrerit nec tortor. Donec at augue gravida, aliquet neque in, efficitur ante. Integer bibendum ipsum eget nulla volutpat, in porta arcu pulvinar. Cras gravida magna eu nibh dignissim elementum nec ac
-                    velit.
-                  </p>
-                </div>
-
-                <div class="collapse" id="jobMiddleDeveloper">
-                  <div class="p-3 p-lg-4 pt-0 border-top">
-                    <div class="mb-4">
-                      <p class="fw-semibold mb-2">1. Cras pellentesque augue vel dui accumsan pretium in in dolor.</p>
-                      <p class="text-muted ms-4 mb-0">
-                        Aliquam non ipsum a ex efficitur luctus commodo sed est. Aliquam erat volutpat. Fusce sapien purus, eleifend in ligula vel, vestibulum sagittis augue. Nullam purus eros, rhoncus et pulvinar ac, hendrerit nec tortor. Donec at
-                        augue gravida, aliquet neque in, efficitur ante. Integer bibendum ipsum eget nulla volutpat, in porta arcu pulvinar. Cras gravida magna eu nibh dignissim elementum nec ac velit.
-                      </p>
+                  <!-- Junior -->
+                  <div class="bg-white shadow-sm rounded border overflow-hidden">
+                    <div class="p-3 p-lg-4 user-select-none cursor-pointer" data-bs-toggle="collapse" data-bs-target="#jobJuniorDeveloper">
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="mb-0 fw-semibold">Junior Developer</h4>
+                        <div class="d-flex align-items-center gap-2">
+                          <span class="fs-5 fw-semibold">$ 2500</span>
+                          <span class="custom-chevron"></span>
+                        </div>
+                      </div>
+                      <p class="mb-0 text-muted preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                     </div>
 
-                    <div class="mb-4">
-                      <p class="fw-semibold mb-2">2. Quisque condimentum tincidunt nisi, vel fringilla ipsum aliquet vitae.</p>
-                      <p class="text-muted ms-4 mb-0">
-                        Quisque condimentum tincidunt nisi, vel fringilla ipsum aliquet vitae. Duis ullamcorper mauris non volutpat convallis. Sed eget augue et risus tempor sollicitudin. Maecenas blandit a nulla vel feugiat. Aenean sit amet tellus
-                        porta, facilisis mi sodales, lacinia risus. Quisque efficitur sem et tempor luctus. Praesent bibendum purus ac dui laoreet faucibus. Pellentesque dignissim fringilla neque id iaculis. Sed consectetur vel ex sit amet lacinia.
-                        Nullam eu laoreet nisi, in dignissim ex. Nulla semper, nunc id pharetra imperdiet, metus nisl rhoncus ante, commodo ornare erat ante non nunc. Aliquam non eros feugiat ex bibendum dictum eu eu ante.
-                      </p>
-                    </div>
-
-                    <div class="mb-4">
-                      <p class="fw-semibold mb-2">3. Nullam lobortis risus eget arcu dignissim, ut blandit diam feugiat.</p>
-                      <p class="text-muted ms-4 mb-0">
-                        Vestibulum ut dignissim dui. Morbi sit amet convallis elit, non feugiat ligula. Sed id lorem lacinia, iaculis tortor ut, tincidunt dui. Donec vulputate mauris accumsan, imperdiet nulla mattis, viverra mi. Mauris non
-                        consectetur orci, pretium dignissim erat. Sed et magna eleifend, mattis lectus id, maximus magna. Nullam lobortis turpis sed magna commodo malesuada.
-                      </p>
-                    </div>
-
-                    <button class="btn btn-primary px-4">Respond to a vacancy</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="bg-white shadow-sm rounded border overflow-hidden" data-categories="developers">
-                <div class="p-3 p-lg-4 user-select-none cursor-pointer" data-bs-toggle="collapse" data-bs-target="#jobJuniorDeveloper" aria-expanded="false" aria-controls="jobJuniorDeveloper">
-                  <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h4 class="mb-0 fw-semibold">Junior Developer</h4>
-                    <div class="d-flex align-items-center gap-2">
-                      <span class="fs-5 fw-semibold">$ 2500</span>
-                      <span class="custom-chevron"></span>
+                    <div class="collapse" id="jobJuniorDeveloper">
+                      <div class="p-3 p-lg-4 pt-0 border-top">
+                        <button class="btn btn-primary px-4">Respond to a vacancy</button>
+                      </div>
                     </div>
                   </div>
-
-                  <p class="mb-0 text-muted preview-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor ante id arcu laoreet sagittis. Integer sagittis, orci mattis vestibulum venenatis, nulla massa vehicula risus, ac euismod odio lectus vel risus. Cras
-                    pellentesque augue vel dui accumsan pretium in in dolor. Aliquam non ipsum a ex efficitur luctus commodo sed est. Aliquam erat volutpat. Fusce sapien purus, eleifend in ligula vel, vestibulum sagittis augue. Nullam purus eros,
-                    rhoncus et pulvinar ac, hendrerit nec tortor. Donec at augue gravida, aliquet neque in, efficitur ante. Integer bibendum ipsum eget nulla volutpat, in porta arcu pulvinar. Cras gravida magna eu nibh dignissim elementum nec ac
-                    velit.
-                  </p>
                 </div>
 
-                <div class="collapse" id="jobJuniorDeveloper">
-                  <div class="p-3 p-lg-4 pt-0 border-top">
-                    <div class="mb-4">
-                      <p class="fw-semibold mb-2">1. Cras pellentesque augue vel dui accumsan pretium in in dolor.</p>
-                      <p class="text-muted ms-4 mb-0">
-                        Aliquam non ipsum a ex efficitur luctus commodo sed est. Aliquam erat volutpat. Fusce sapien purus, eleifend in ligula vel, vestibulum sagittis augue. Nullam purus eros, rhoncus et pulvinar ac, hendrerit nec tortor. Donec at
-                        augue gravida, aliquet neque in, efficitur ante. Integer bibendum ipsum eget nulla volutpat, in porta arcu pulvinar. Cras gravida magna eu nibh dignissim elementum nec ac velit.
-                      </p>
+                <div class="tab-pane fade" id="tab-developers">
+                  <div class="bg-white shadow-sm rounded border overflow-hidden mb-4">
+                    <div class="p-3 p-lg-4" data-bs-toggle="collapse" data-bs-target="#jobSeniorDeveloper2">
+                      <h4 class="fw-semibold">Senior Developer</h4>
                     </div>
-
-                    <div class="mb-4">
-                      <p class="fw-semibold mb-2">2. Quisque condimentum tincidunt nisi, vel fringilla ipsum aliquet vitae.</p>
-                      <p class="text-muted ms-4 mb-0">
-                        Quisque condimentum tincidunt nisi, vel fringilla ipsum aliquet vitae. Duis ullamcorper mauris non volutpat convallis. Sed eget augue et risus tempor sollicitudin. Maecenas blandit a nulla vel feugiat. Aenean sit amet tellus
-                        porta, facilisis mi sodales, lacinia risus. Quisque efficitur sem et tempor luctus. Praesent bibendum purus ac dui laoreet faucibus. Pellentesque dignissim fringilla neque id iaculis. Sed consectetur vel ex sit amet lacinia.
-                        Nullam eu laoreet nisi, in dignissim ex. Nulla semper, nunc id pharetra imperdiet, metus nisl rhoncus ante, commodo ornare erat ante non nunc. Aliquam non eros feugiat ex bibendum dictum eu eu ante.
-                      </p>
-                    </div>
-
-                    <div class="mb-4">
-                      <p class="fw-semibold mb-2">3. Nullam lobortis risus eget arcu dignissim, ut blandit diam feugiat.</p>
-                      <p class="text-muted ms-4 mb-0">
-                        Vestibulum ut dignissim dui. Morbi sit amet convallis elit, non feugiat ligula. Sed id lorem lacinia, iaculis tortor ut, tincidunt dui. Donec vulputate mauris accumsan, imperdiet nulla mattis, viverra mi. Mauris non
-                        consectetur orci, pretium dignissim erat. Sed et magna eleifend, mattis lectus id, maximus magna. Nullam lobortis turpis sed magna commodo malesuada.
-                      </p>
-                    </div>
-
-                    <button class="btn btn-primary px-4">Respond to a vacancy</button>
                   </div>
                 </div>
+
+                <div class="tab-pane fade" id="tab-managers"></div>
+                <div class="tab-pane fade" id="tab-designers"></div>
+                <div class="tab-pane fade" id="tab-support"></div>
+                <div class="tab-pane fade" id="tab-content"></div>
               </div>
             </div>
           </div>

@@ -600,8 +600,26 @@ body {
 }
 
 .nav-pills .nav-link {
-  border: none !important;
+  border: none;
   margin: 0 !important;
+}
+
+.nav-pills .nav-link {
+  background: white !important;
+  color: #333;
+  border-radius: 0 !important;
+  text-align: left;
+}
+
+.nav-pills .nav-link:hover {
+  color: #249fdd;
+  background: transparent;
+}
+
+.nav-pills .nav-link.active {
+  background: #fff !important;
+  color: #249fdd !important;
+  font-weight: 600;
 }
 
 .auth-input {
@@ -1058,11 +1076,21 @@ nav[aria-label="Main menu"] {
   z-index: 3000;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid #dee2e6;
+}
+
+.chat-window {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.chat-window.open {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.25s ease;
 }
 
 .chat-header {
-  background-color: #249fdd;
+  background-color: #249fdd !important;
 }
 
 .chat-body {

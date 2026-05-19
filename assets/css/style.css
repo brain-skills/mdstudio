@@ -426,6 +426,24 @@ body {
   z-index: 2;
 }
 
+.hero-img {
+  max-width: 445px;
+  max-height: 370px;
+}
+
+@media (max-width: 1400px) {
+  .hero-img {
+    max-width: 343px;
+    max-height: 285px;
+  }
+}
+
+@media (min-width: 992px) {
+  .w-lg-50 {
+    width: 50% !important;
+  }
+}
+
 .center-feature-gear {
   position: absolute;
   top: 50%;
@@ -639,10 +657,6 @@ body {
 
 .dropdown-menu li:last-child {
   border-bottom: 1px solid transparent !important;
-}
-
-.menu-item:hover .dropdown-menu {
-  display: block;
 }
 
 .dropdown-item:hover {

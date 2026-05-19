@@ -39,8 +39,8 @@
                 <div class="d-flex align-items-center">
                   <ul class="list-unstyled d-flex align-items-center mb-0 me-3 me-lg-5 header-divider header-settings d-none d-lg-flex">
                     <li class="ps-0 pe-2">
-                      <button type="button" class="d-flex gap-2 border-0 bg-transparent text-light fs-7 ps-0 pe-1" data-bs-toggle="modal" data-bs-target="#settingsModal">
-                        <img src="./assets/images/svg/icon_geo-white.svg" alt="geo icon" style="width: 20px" />
+                      <button type="button" class="d-flex align-items-center gap-2 border-0 bg-transparent text-light fs-7 ps-0 pe-1" data-bs-toggle="modal" data-bs-target="#settingsModal">
+                        <img src="./assets/images/svg/icon_geo-white.svg" alt="geo icon" width="28" />
                         USA
                       </button>
                     </li>
@@ -52,8 +52,8 @@
                     </li>
 
                     <li class="ps-2 pe-0">
-                      <button type="button" class="d-flex gap-2 border-0 bg-transparent text-light fs-7 ps-1 pe-0" data-bs-toggle="modal" data-bs-target="#settingsModal">
-                        <img src="./assets/images/svg/icon_currency-white.svg" alt="currency icon" style="width: 20px" />
+                      <button type="button" class="d-flex gap-2 align-items-center border-0 bg-transparent text-light fs-7 ps-1 pe-0" data-bs-toggle="modal" data-bs-target="#settingsModal">
+                        <img src="./assets/images/svg/icon_currency-white.svg" alt="currency icon" width="28" />
                         USD
                       </button>
                     </li>
@@ -195,38 +195,22 @@
                   <li class="menu-item">
                     <a href="index.html" class="menu-link text-light text-decoration-none">Home</a>
                   </li>
-                  <li class="menu-item position-relative">
-                    <a href="services.html" class="menu-link text-decoration-none d-flex align-items-center">
-                      Services
-                      <i class="fa fa-angle-down fs-5 menu-icon ms-2"></i>
-                    </a>
+                  <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle d-flex align-items-center text-white" data-bs-toggle="dropdown"> Services </a>
+
                     <ul class="dropdown-menu rounded shadow-lg border-0 p-3">
-                      <li>
-                        <a class="dropdown-item text-dark-custom" href="service.html">Web Development</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item text-dark-custom" href="service.html">Software Development</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item text-dark-custom" href="service.html">Development</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item text-dark-custom" href="service.html">UI/UX</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item text-dark-custom" href="service.html">SEO</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item text-dark-custom" href="service.html">SMM</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item text-dark-custom" href="service.html">Target</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item text-dark-custom" href="service.html">Data</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item text-dark-custom" href="service.html">Graphic Design</a>
+                      <li><a class="dropdown-item px-0" href="service.html">Web Development</a></li>
+                      <li><a class="dropdown-item px-0" href="service.html">Software Development</a></li>
+                      <li><a class="dropdown-item px-0" href="service.html">Development</a></li>
+                      <li><a class="dropdown-item px-0" href="service.html">UI/UX</a></li>
+                      <li><a class="dropdown-item px-0" href="service.html">SEO</a></li>
+                      <li><a class="dropdown-item px-0" href="service.html">SMM</a></li>
+                      <li><a class="dropdown-item px-0" href="service.html">Target</a></li>
+                      <li><a class="dropdown-item px-0" href="service.html">Data</a></li>
+                      <li><a class="dropdown-item px-0" href="service.html">Graphic Design</a></li>
+
+                      <li class="pt-2">
+                        <a href="services.html" class="btn btn-primary w-100 py-1"> All Services </a>
                       </li>
                     </ul>
                   </li>
@@ -403,26 +387,23 @@
       </section>
       <section class="request-section bg-common position-relative overflow-hidden py-section" id="request">
         <div class="container h-100 d-flex align-items-center">
-          <div class="row w-100 align-items-center">
-            <div class="col-lg-6 text-start request-content z-2">
-              <h2 class="title text-light text-center text-md-start">Leave a request for a consultation on services</h2>
-              <p class="fs-4 text-white-50 mt-3 bg-blurred rounded p-3">
-                Leave your contact information <br />
-                and we will contact you and answer all your questions in detail.
-              </p>
+          <div class="text-start z-2 col-12 col-lg-6">
+            <h2 class="title text-light text-center text-md-start">Leave a request for a consultation on services</h2>
+            <p class="fs-4 text-white-50 mt-3 bg-blurred rounded p-3">
+              Leave your contact information <br />
+              and we will contact you and answer all your questions in detail.
+            </p>
 
-              <form class="d-flex flex-column flex-md-row gap-3 mt-3">
-                <input type="text" class="white-input" placeholder="Your Name" />
+            <form class="d-flex flex-column flex-md-row gap-3 mt-3">
+              <input type="text" class="white-input" placeholder="Your Name" />
 
-                <input type="email" class="white-input" placeholder="Your Email" />
+              <input type="email" class="white-input" placeholder="Your Email" />
 
-                <button type="submit" class="px-5 py-2 text-white border-0 w-100 bg-blue-custom">Send</button>
-              </form>
-            </div>
+              <button type="submit" class="px-5 py-2 text-white border-0 w-100 bg-blue-custom">Send</button>
+            </form>
           </div>
+          <img src="./assets/images/contact-phone.png" alt="Phone" class="contact-phone-img z-2 d-none d-lg-flex" />
         </div>
-
-        <img src="./assets/images/contact-phone.png" alt="Phone" class="contact-phone-img z-2 d-none d-lg-flex" />
 
         <div class="particles-bottom-light"></div>
       </section>

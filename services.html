@@ -38,8 +38,8 @@
               <div class="d-flex align-items-center">
                 <ul class="list-unstyled d-flex align-items-center mb-0 me-3 me-lg-5 header-divider header-settings d-none d-lg-flex">
                   <li class="ps-0 pe-2">
-                    <button type="button" class="d-flex gap-2 border-0 bg-transparent text-light fs-7 ps-0 pe-1" data-bs-toggle="modal" data-bs-target="#settingsModal">
-                      <img src="./assets/images/svg/icon_geo-white.svg" alt="geo icon" width="20" /> USA
+                    <button type="button" class="d-flex gap-2 align-items-center border-0 bg-transparent text-light fs-7 ps-0 pe-1" data-bs-toggle="modal" data-bs-target="#settingsModal">
+                      <img src="./assets/images/svg/icon_geo-white.svg" alt="geo icon" width="28" /> USA
                     </button>
                   </li>
                   <li class="px-2">
@@ -48,8 +48,8 @@
                     </button>
                   </li>
                   <li class="ps-2 pe-0">
-                    <button type="button" class="d-flex gap-2 border-0 bg-transparent text-light fs-7 ps-1 pe-0" data-bs-toggle="modal" data-bs-target="#settingsModal">
-                      <img src="./assets/images/svg/icon_currency-white.svg" alt="currency icon" width="20" /> USD
+                    <button type="button" class="d-flex gap-2 align-items-center border-0 bg-transparent text-light fs-7 ps-1 pe-0" data-bs-toggle="modal" data-bs-target="#settingsModal">
+                      <img src="./assets/images/svg/icon_currency-white.svg" alt="currency icon" width="28" /> USD
                     </button>
                   </li>
                 </ul>
@@ -109,21 +109,23 @@
             <nav aria-label="Main menu" class="bg-blurred p-2 p-lg-3 d-flex justify-content-between align-items-center mt-3 rounded position-relative">
               <ul class="menu list-unstyled d-none d-md-flex align-items-center justify-content-between gap-4 gap-xl-5 mb-0 w-100">
                 <li class="menu-item"><a href="index.html" class="menu-link text-light text-decoration-none">Home</a></li>
-                <li class="menu-item position-relative">
-                  <a href="services.html" class="menu-link text-decoration-none d-flex align-items-center">
-                    Services
-                    <i class="fa fa-angle-down fs-5 menu-icon ms-2"></i>
-                  </a>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle d-flex align-items-center text-white" data-bs-toggle="dropdown"> Services </a>
+
                   <ul class="dropdown-menu rounded shadow-lg border-0 p-3">
-                    <li><a class="dropdown-item text-dark-custom" href="service.html">Web Development</a></li>
-                    <li><a class="dropdown-item text-dark-custom" href="service.html">Software Development</a></li>
-                    <li><a class="dropdown-item text-dark-custom" href="service.html">Development</a></li>
-                    <li><a class="dropdown-item text-dark-custom" href="service.html">UI/UX</a></li>
-                    <li><a class="dropdown-item text-dark-custom" href="service.html">SEO</a></li>
-                    <li><a class="dropdown-item text-dark-custom" href="service.html">SMM</a></li>
-                    <li><a class="dropdown-item text-dark-custom" href="service.html">Target</a></li>
-                    <li><a class="dropdown-item text-dark-custom" href="service.html">Data</a></li>
-                    <li><a class="dropdown-item text-dark-custom" href="service.html">Graphic Design</a></li>
+                    <li><a class="dropdown-item px-0" href="service.html">Web Development</a></li>
+                    <li><a class="dropdown-item px-0" href="service.html">Software Development</a></li>
+                    <li><a class="dropdown-item px-0" href="service.html">Development</a></li>
+                    <li><a class="dropdown-item px-0" href="service.html">UI/UX</a></li>
+                    <li><a class="dropdown-item px-0" href="service.html">SEO</a></li>
+                    <li><a class="dropdown-item px-0" href="service.html">SMM</a></li>
+                    <li><a class="dropdown-item px-0" href="service.html">Target</a></li>
+                    <li><a class="dropdown-item px-0" href="service.html">Data</a></li>
+                    <li><a class="dropdown-item px-0" href="service.html">Graphic Design</a></li>
+
+                    <li class="pt-2">
+                      <a href="services.html" class="btn btn-primary w-100 py-1"> All Services </a>
+                    </li>
                   </ul>
                 </li>
                 <li class="menu-item"><a href="portfolio.html" class="menu-link text-light text-decoration-none">Portfolio</a></li>
@@ -184,7 +186,7 @@
         </div>
 
         <div class="container flex-grow-1 d-flex align-items-center">
-          <div class="d-flex flex-column flex-lg-row gap-4 align-items-center justify-content-center mb-4 mg-lg-0">
+          <div class="d-flex flex-column flex-lg-row gap-4 align-items-center justify-content-center justify-content-lg-between py-section">
             <div class="col-lg-6 text-white text-center text-lg-start mt-0 z-2">
               <h1 class="title display-4 fw-bold mb-4">Our Services</h1>
               <p class="bg-blurred rounded p-3 fs-4 text-white-50 mb-5 lead">
@@ -194,12 +196,12 @@
                 <button class="btn btn-primary btn-lg px-5 py-3">More info</button>
               </div>
             </div>
-            <img src="./assets/images/services/services-banner-img.svg" alt="Professional web development and data services illustration" loading="lazy" class="w-50 p-0 position-relative z-2" />
+            <img src="./assets/images/services/services-banner-img.svg" alt="Professional web development and data services illustration" loading="lazy" class="hero-img position-relative z-2 d-none d-lg-flex" />
           </div>
         </div>
         <div class="particles-bottom-light"></div>
       </section>
-      <section class="py-4 py-md-5 position-relative service-item">
+      <section class="py-section position-relative service-item">
         <div class="container d-flex flex-column flex-md-row gap-5 align-items-center position-relative z-2">
           <div class="bg-blurred-dark rounded p-3">
             <h2 class="fw-normal lh-sm text-dark-custom mb-3">High-quality Web Development</h2>
@@ -243,13 +245,13 @@
               </button>
             </div>
           </div>
-          <img src="./assets/images/laptop.png" alt="" class="service-img" style="z-index: 2" />
+          <img src="./assets/images/laptop.png" alt="" class="service-img z-2 d-none d-xl-flex" />
         </div>
         <div class="particles-bottom-dark"></div>
       </section>
       <section class="py-section bg-common position-relative service-item">
         <div class="container d-flex flex-column flex-md-row gap-5 align-items-center position-relative z-2">
-          <img src="./assets/images/services/service-mobile.png" alt="" class="service-img" />
+          <img src="./assets/images/services/service-mobile.png" alt="" class="service-img d-none d-xl-flex" />
           <div>
             <h2 class="fw-normal lh-sm text-light mb-3">Mobile App Development</h2>
             <p class="fw-bold text-light fs-6 lh-sm mb-3">Creating mobile apps for iOS and Android</p>
@@ -295,7 +297,7 @@
         </div>
         <div class="particles-bottom-light"></div>
       </section>
-      <section class="py-4 py-md-5 position-relative service-item">
+      <section class="py-section position-relative service-item">
         <div class="container d-flex flex-column flex-md-row gap-5 align-items-center position-relative z-2">
           <div>
             <h2 class="fw-normal lh-sm text-dark-custom mb-3">Software Development</h2>
@@ -339,13 +341,13 @@
               </button>
             </div>
           </div>
-          <img src="./assets/images/services/service-software.png" alt="" class="service-img" />
+          <img src="./assets/images/services/service-software.png" alt="" class="service-img d-none d-xl-flex" />
         </div>
         <div class="particles-bottom-dark"></div>
       </section>
       <section class="py-section bg-common position-relative service-item">
         <div class="container d-flex flex-column flex-md-row gap-5 align-items-center position-relative z-2">
-          <img src="./assets/images/services/service-ui-ux.png" alt="" class="service-img" />
+          <img src="./assets/images/services/service-ui-ux.png" alt="" class="service-img d-none d-xl-flex" />
           <div>
             <h2 class="fw-normal lh-sm text-light mb-3">UI/UX Design</h2>
             <p class="fw-bold text-light fs-6 lh-sm mb-3">Interface design + usability</p>
@@ -391,7 +393,7 @@
         </div>
         <div class="particles-bottom-light"></div>
       </section>
-      <section class="py-4 py-md-5 position-relative service-item">
+      <section class="py-section position-relative service-item">
         <div class="container d-flex flex-column flex-md-row gap-5 align-items-center position-relative z-2">
           <div>
             <h2 class="fw-normal lh-sm text-dark-custom mb-3">SEO</h2>
@@ -435,13 +437,13 @@
               </button>
             </div>
           </div>
-          <img src="./assets/images/services/service-seo.png" alt="" class="service-img" />
+          <img src="./assets/images/services/service-seo.png" alt="" class="service-img d-none d-xl-flex" />
         </div>
         <div class="particles-bottom-dark"></div>
       </section>
       <section class="py-section bg-common position-relative service-item">
         <div class="container d-flex flex-column flex-md-row gap-5 align-items-center position-relative z-2">
-          <img src="./assets/images/services/service-smm.png" alt="" class="service-img" />
+          <img src="./assets/images/services/service-smm.png" alt="" class="service-img d-none d-xl-flex" />
           <div>
             <h2 class="fw-normal lh-sm text-light mb-3">SMM</h2>
             <p class="fw-bold text-light fs-6 lh-sm mb-3">Social Media Management: design, publications, content plan</p>
@@ -487,7 +489,7 @@
         </div>
         <div class="particles-bottom-light"></div>
       </section>
-      <section class="py-4 py-md-5 position-relative service-item">
+      <section class="py-section position-relative service-item">
         <div class="container d-flex flex-column flex-md-row gap-5 align-items-center position-relative z-2">
           <div>
             <h2 class="fw-normal lh-sm text-dark-custom mb-3">Targeted Ads</h2>
@@ -531,13 +533,13 @@
               </button>
             </div>
           </div>
-          <img src="./assets/images/services/service-target.png" alt="" class="service-img" />
+          <img src="./assets/images/services/service-target.png" alt="" class="service-img d-none d-xl-flex" />
         </div>
         <div class="particles-bottom-dark"></div>
       </section>
       <section class="py-section bg-common position-relative service-item">
         <div class="container d-flex flex-column flex-md-row gap-5 align-items-center position-relative z-2">
-          <img src="./assets/images/services/service-data.png" alt="" class="service-img" />
+          <img src="./assets/images/services/service-data.png" alt="" class="service-img d-none d-xl-flex" />
           <div>
             <h2 class="fw-normal lh-sm text-light mb-3">Data Extraction & Integration</h2>
             <p class="fw-bold text-light fs-6 lh-sm mb-3">Automated data import and synchronization</p>
@@ -583,7 +585,7 @@
         </div>
         <div class="particles-bottom-light"></div>
       </section>
-      <section class="py-4 py-md-5 position-relative service-item">
+      <section class="py-section position-relative service-item">
         <div class="container d-flex flex-column flex-md-row gap-5 align-items-center position-relative z-2">
           <div>
             <h2 class="fw-normal lh-sm text-dark-custom mb-3">Graphic Design</h2>
@@ -627,7 +629,7 @@
               </button>
             </div>
           </div>
-          <img src="./assets/images/services/service-graphic-design.svg" alt="" class="service-img-graphic-design" />
+          <img src="./assets/images/services/service-graphic-design.svg" alt="" class="service-img-graphic-design d-none d-xl-flex" />
         </div>
         <div class="particles-bottom-dark"></div>
       </section>

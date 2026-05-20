@@ -58,3 +58,9 @@
   z-index: 1;
   pointer-events: none;
 }
+
+@media (max-width: 992px) {
+  .portfolio-particles {
+    bottom: 15%;
+  }
+}
